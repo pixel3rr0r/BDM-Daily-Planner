@@ -169,6 +169,10 @@ nav.navbar {
     box-shadow: 0 -10px 30px var(--box-shadow);
 }
 
+.dark nav.navbar {
+    background-color: var(--primary-dark);
+}
+
 .navbar ul {
     list-style: none;
     padding: 1em 0;
