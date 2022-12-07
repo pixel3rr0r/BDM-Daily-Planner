@@ -74,7 +74,7 @@ function timeString(timeData) {
 }
 
 function nextDay(weekday, hour) {
-    var now = new Date()
+    var now = getCurrentServerTime()
     var result = new Date(
                  now.getFullYear(),
                  now.getMonth(),
@@ -84,6 +84,11 @@ function nextDay(weekday, hour) {
     if (result < now)
         result.setDate(result.getDate() + 7)
     return result;
+}
+
+function getCurrentServerTime() {
+    t = new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"})
+    return new Date(t)
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -107,7 +112,7 @@ wbs.forEach(wb => {
     })
 
     let closest = Infinity;
-    now = new Date();
+    now = getCurrentServerTime();
     possibleSpawn.forEach(date => {
         const d = new Date(date);
         if (d >= now && (d < new Date(closest) || d < closest))
@@ -115,7 +120,6 @@ wbs.forEach(wb => {
     })
     wb["nextSpawn"] = closest
 })
-
 
 function createWbTable() {
     wbs.sort((a, b) => a["nextSpawn"] - b["nextSpawn"])
@@ -127,7 +131,7 @@ function createWbTable() {
         })
 
         let closest = Infinity;
-        now = new Date();
+        now = getCurrentServerTime();
         possibleSpawn.forEach(date => {
             const d = new Date(date);
             if (d >= now && (d < new Date(closest) || d < closest))
@@ -151,9 +155,8 @@ function createWbTable() {
     })
 }
 
-
 function createTimeTable() {
-    var today = new Date();
+    var today = getCurrentServerTime();
     eventsToday = events[today.getDay()]
     eventsToday.sort((a, b) => a["hour"] - b["hour"])
 
@@ -180,7 +183,7 @@ function createTimeTable() {
 }
 
 function countdown(time, element) {
-    var now = new Date();
+    var now = getCurrentServerTime();
 
     var diff = parseTime((time - now) / 1000)
 
@@ -193,9 +196,9 @@ createWbTable()
 lastWeekday = new Date().getDay();
 
 setInterval(function () {
-    var now = new Date();
-    var tomorrow = new Date();
-    var endofweek = new Date();
+    var now = getCurrentServerTime();
+    var tomorrow = getCurrentServerTime();
+    var endofweek = getCurrentServerTime();
 
     tomorrow.setHours(24, 0, 0, 0);
     endofweek.setDate(endofweek.getDate() + ((7 - endofweek.getDay()) % 7 + 1) % 7);
