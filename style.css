@@ -18,9 +18,17 @@
     --box-shadow: rgba(65, 72, 86, 0.05);
 }
 
+html {
+    height: 100%
+}
+
 body {
     background: var(--primary-light);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
     max-width: 100vw;
     font: 400 16px "Josefin Sans", sans-serif;
 }
@@ -165,6 +173,7 @@ nav.navbar {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 50;
     background-color: var(--primary-light);
     box-shadow: 0 -10px 30px var(--box-shadow);
 }
@@ -550,6 +559,13 @@ body .about>span:hover {
     content: "🌙"
 }
 
+footer {
+    width: 80%;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    text-align: center;
+    opacity: .5;
+}
 
 @media screen and (max-width: 450px) {
     nav.navbar {
@@ -560,12 +576,19 @@ body .about>span:hover {
         font-size: 1.7em;
     }
 
-    .sideContainer {
-        margin-bottom: 2em;
+    .about {
+        bottom: 0em;
+        right: 0;
+        background: var(--primary-dark);
+        font-size: .8em;
+        border-top-left-radius: 10px;
+    }
+    nav.navbar {
+        right: 3em;
     }
 
-    .about {
-        display: none;
+    footer {
+        margin-bottom: 3em;
     }
 }
 

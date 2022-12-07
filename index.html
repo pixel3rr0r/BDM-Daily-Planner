@@ -18,90 +18,92 @@
 </head>
 
 <body class="dark">
-    <h1>🔁 BDM Daily Planner</h1>
-    <div class="container">
-        <div class="checklistContainer" id="daily">
-            <h2>Daily Tasks</h2>
-            <span class="timer" id="timerDaily">Calculating...</span>
-            <h3>📜 Quests</h3>
-            <div class="checklist">
-                <input id="bsquests" class="checkboxDaily" type="checkbox" name="r" value="1">
-                <label for="bsquests">Black Spirit Quests x4</label>
-                <input id="guildquests" class="checkboxDaily" type="checkbox" name="r" value="2">
-                <label for="guildquests">Guild Quests x3</label>
-                <input type="checkbox" class="checkboxDaily" name="r" id="bounties" value="5">
-                <label for="bounties">Bounty Missions x2</label>
-                <input id="tot" class="checkboxDaily" type="checkbox" name="r" value="3">
-                <label for="tot">Tower of Trials x3</label>
+    <div class="content">
+        <h1>🔁 BDM Daily Planner</h1>
+        <div class="container">
+            <div class="checklistContainer" id="daily">
+                <h2>Daily Tasks</h2>
+                <span class="timer" id="timerDaily">Calculating...</span>
+                <h3>📜 Quests</h3>
+                <div class="checklist">
+                    <input id="bsquests" class="checkboxDaily" type="checkbox" name="r" value="1">
+                    <label for="bsquests">Black Spirit Quests x4</label>
+                    <input id="guildquests" class="checkboxDaily" type="checkbox" name="r" value="2">
+                    <label for="guildquests">Guild Quests x3</label>
+                    <input type="checkbox" class="checkboxDaily" name="r" id="bounties" value="5">
+                    <label for="bounties">Bounty Missions x2</label>
+                    <input id="tot" class="checkboxDaily" type="checkbox" name="r" value="3">
+                    <label for="tot">Tower of Trials x3</label>
+                </div>
+                <h3>🧚‍♀️ Fairy</h3>
+                <div class="checklist">
+                    <input type="checkbox" class="checkboxDaily" name="r"class="checkboxWeekly"  id="fairytalk" value="7">
+                    <label for="fairytalk">Fairy Talk x3</label>
+                    <input type="checkbox" class="checkboxDaily" name="r" id="fairywish" value="8">
+                    <label for="fairywish">Fairy Wish x2</label>
+                    <input type="checkbox" class="checkboxDaily" name="r" id="fairystudy" value="9">
+                    <label for="fairystudy">Fairy Study</label>
+                </div>
+                <h3>🎁 Other</h3>
+                <div class="checklist">
+                    <input type="checkbox" class="checkboxDaily" name="r" id="stamina" value="4">
+                    <label for="stamina">Use Stamina x100</label>
+                    <input type="checkbox" class="checkboxDaily" name="r" id="ranks" value="6">
+                    <label for="ranks">Praise Ranks</label>
+                    <input type="checkbox" class="checkboxDaily" name="r" id="mail" value="10">
+                    <label for="mail">Check Mail</label>
+                    <input type="checkbox" class="checkboxDaily" name="r" id="events" value="11">
+                    <label for="events">Events</label>
+                </div>
             </div>
-            <h3>🧚‍♀️ Fairy</h3>
-            <div class="checklist">
-                <input type="checkbox" class="checkboxDaily" name="r"class="checkboxWeekly"  id="fairytalk" value="7">
-                <label for="fairytalk">Fairy Talk x3</label>
-                <input type="checkbox" class="checkboxDaily" name="r" id="fairywish" value="8">
-                <label for="fairywish">Fairy Wish x2</label>
-                <input type="checkbox" class="checkboxDaily" name="r" id="fairystudy" value="9">
-                <label for="fairystudy">Fairy Study</label>
+            <div class="checklistContainer" id="weekly">
+                <h2>Weekly Tasks</h2>
+                <span class="timer" id="timerWeekly">Calculating...</span>
+                <div class="checklist">
+                    <input id="merchantry" class="checkboxWeekly" type="checkbox" name="r" value="11">
+                    <label for="merchantry">Merchantry x1</label>
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="pog" value="17">
+                    <label for="pog">Path of Glory x5</label>
+                </div>
+                <h3>🧌 Farming</h3>
+                <div class="checklist">
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="desert" value="14">
+                    <label for="desert">Great Desert 60min</label>
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="rift" value="16">
+                    <label for="rift">Chaos Rift 2h 30min</label>
+                </div>
+                <h3>⚔️ PvP</h3>
+                <div class="checklist">
+                    <input id="ramoness" class="checkboxWeekly" type="checkbox" name="r" value="12">
+                    <label for="ramoness">Win Ramoness Arena x1</label>
+                    <input id="ranked" class="checkboxWeekly" type="checkbox" name="r" value="13">
+                    <label for="ranked">Win Ranked Arena x3</label>
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="bots" value="15">
+                    <label for="bots">Win Battlefield of the Sun x1</label>
+                </div>
+                <h3>👹 World Boss</h3>
+                <div class="checklist">
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="alyaelli" value="17">
+                    <label for="alyaelli">Alyaelli's Rift</label>
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="wblaytenn" value="18">
+                    <label for="wblaytenn">Tukar Laytenn</label>
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="wbmuraka" value="19">
+                    <label for="wbmuraka">Muraka</label>
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="wbgriffon" value="20">
+                    <label for="wbgriffon">Ahib's Griffon</label>
+                    <input type="checkbox" class="checkboxWeekly" name="r" id="wboffin" value="20">
+                    <label for="wboffin">Co-op Rush: Offin</label>
+                </div>
             </div>
-            <h3>🎁 Other</h3>
-            <div class="checklist">
-                <input type="checkbox" class="checkboxDaily" name="r" id="stamina" value="4">
-                <label for="stamina">Use Stamina x100</label>
-                <input type="checkbox" class="checkboxDaily" name="r" id="ranks" value="6">
-                <label for="ranks">Praise Ranks</label>
-                <input type="checkbox" class="checkboxDaily" name="r" id="mail" value="10">
-                <label for="mail">Check Mail</label>
-                <input type="checkbox" class="checkboxDaily" name="r" id="events" value="11">
-                <label for="events">Events</label>
-            </div>
-        </div>
-        <div class="checklistContainer" id="weekly">
-            <h2>Weekly Tasks</h2>
-            <span class="timer" id="timerWeekly">Calculating...</span>
-            <div class="checklist">
-                <input id="merchantry" class="checkboxWeekly" type="checkbox" name="r" value="11">
-                <label for="merchantry">Merchantry x1</label>
-                <input type="checkbox" class="checkboxWeekly" name="r" id="pog" value="17">
-                <label for="pog">Path of Glory x7</label>
-            </div>
-            <h3>🧌 Farming</h3>
-            <div class="checklist">
-                <input type="checkbox" class="checkboxWeekly" name="r" id="desert" value="14">
-                <label for="desert">Great Desert 60min</label>
-                <input type="checkbox" class="checkboxWeekly" name="r" id="rift" value="16">
-                <label for="rift">Chaos Rift 5h</label>
-            </div>
-            <h3>⚔️ PvP</h3>
-            <div class="checklist">
-                <input id="ramoness" class="checkboxWeekly" type="checkbox" name="r" value="12">
-                <label for="ramoness">Ramoness Arena x1</label>
-                <input id="ranked" class="checkboxWeekly" type="checkbox" name="r" value="13">
-                <label for="ranked">Ranked Arena x3</label>
-                <input type="checkbox" class="checkboxWeekly" name="r" id="bots" value="15">
-                <label for="bots">Win Battlefield of the Sun x3</label>
-            </div>
-            <h3>👹 World Boss</h3>
-            <div class="checklist">
-                <input type="checkbox" class="checkboxWeekly" name="r" id="alyaelli" value="17">
-                <label for="alyaelli">Alyaelli's Rift</label>
-                <input type="checkbox" class="checkboxWeekly" name="r" id="wblaytenn" value="18">
-                <label for="wblaytenn">Tukar Laytenn</label>
-                <input type="checkbox" class="checkboxWeekly" name="r" id="wbmuraka" value="19">
-                <label for="wbmuraka">Muraka</label>
-                <input type="checkbox" class="checkboxWeekly" name="r" id="wbgriffon" value="20">
-                <label for="wbgriffon">Ahib's Griffon</label>
-                <input type="checkbox" class="checkboxWeekly" name="r" id="wboffin" value="20">
-                <label for="wboffin">Co-op Rush: Offin</label>
-            </div>
-        </div>
-        <div class="sideContainer" id="timers">
-            <div class="checklistContainer">
-                <h2>Events today</h2>
-                <div id="timetable"></div>
-            </div>
-            <div class="checklistContainer">
-                <h2>Next World Boss</h2>
-                <div id="wbtable"></div>
+            <div class="sideContainer" id="timers">
+                <div class="checklistContainer">
+                    <h2>Events today</h2>
+                    <div id="timetable"></div>
+                </div>
+                <div class="checklistContainer">
+                    <h2>Next World Boss</h2>
+                    <div id="wbtable"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -130,6 +132,7 @@
         <br><br><br>
         <p>Made by Pixel3rr0r</p>
     </div>
+    <footer>Made with ❤️ for the BDM community.</footer>
 </body>
 <script src="main.js" type = "text/javascript"></script>
 </html>
